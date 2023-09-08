@@ -1,7 +1,7 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
 const conn = require('./db/database')
-const Handlebars = require('handlebars');
+
 
 const userRoutes = require('./routes/usersRoutes')
 const postsRoutes = require('./routes/postsRoutes')
@@ -18,13 +18,6 @@ app.use(
     })
 )
 
-
-Handlebars.registerHelper('isEqual', function (a, b, options) {
-  if (a === b) {
-    return options.fn(this);
-  }
-  return options.inverse(this);
-});
 
 app.use(express.json())
 
