@@ -1,0 +1,16 @@
+<table border="1">
+    <tr>
+        <td>ID</td>
+        <td>Titulo</td>
+        <td>Usuário</td>
+    </tr>
+    {{#each posts}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.titulo}}</td>
+            <td>{{this.nome}}</td>
+        </tr>
+    {{/each}}
+</table>
+
+
