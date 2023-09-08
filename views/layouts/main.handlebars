@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    {{#unless  logout }}
+    <a href="/login/logout">Sair do Sistema</a>
+    {{/unless }}
     {{{body}}}
 </body>
 </html>
